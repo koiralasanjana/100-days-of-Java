@@ -1,3 +1,6 @@
+//Write a program that takes an integer input from the user and prints
+// whether it is a prime number.
+
 import java.util.Scanner;
 
 public class Day3Prime {
