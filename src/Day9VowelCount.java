@@ -1,6 +1,8 @@
 //Write a program that takes a string input from the user and counts the
 // number of vowels in the string
 
+import java.util.Scanner;
+
 public class Day9VowelCount {
     public void vowel(String input){
         String myInput = input.replaceAll("\\s+","").trim();
@@ -14,7 +16,9 @@ public class Day9VowelCount {
         System.out.println(count);
     }
     public static void main(String[] args){
-        String input = "This is a test for vowel";
+        System.out.println("Please add a string input for vowel count: ");
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
         Day9VowelCount vowel = new Day9VowelCount();
         vowel.vowel(input);
     }
