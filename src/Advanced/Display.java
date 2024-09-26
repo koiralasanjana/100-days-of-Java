@@ -6,5 +6,18 @@
 package Advanced;
 
 public class Display {
+    public void show(int a){
+        System.out.println(a);
+    }
+    public void show(String b){
+        System.out.println(b);
+    }
 
+    public static void main(String[] args){
+        Display display = new Display();
+        int a = 5;
+        String b = "Hello";
+        display.show(a);
+        display.show(b);
+    }
 }
