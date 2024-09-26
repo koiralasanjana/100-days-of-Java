@@ -8,15 +8,13 @@
 
 package Advanced;
 
-import java.sql.PreparedStatement;
-
 abstract class Shape {
     public abstract double calculateArea();
 
     public static void main(String[] args){
         Shape[] shapes = new Shape[2];
         shapes[0] = new Circle(5);
-        shapes[1] = new rectangle(69f, 3f);
+        shapes[1] = new Rectangle2(69f, 3f);
 
         for (Shape shape : shapes) {
             System.out.println("Area: " + shape.calculateArea());
@@ -37,11 +35,11 @@ class Circle extends Shape {
     }
 }
 
-class rectangle extends Shape{
+class Rectangle2 extends Shape{
     private float length;
     private float width;
 
-    public rectangle(float length, float width){
+    public Rectangle2(float length, float width){
         this.length=length;
         this.width=width;
     }
